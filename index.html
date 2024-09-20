@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐏𝐀𝐍𝐄𝐋 𝐅𝐀𝐊𝐄 𝐏𝐂</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-panel {
+            width: 30%;
+        }
+
+        .right-panel {
+            width: 60%;
+        }
+
+        .right-panel h2 {
+            color: #00d4ff;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .menu-item span {
+            font-size: 18px;
+        }
+
+        .apply-btn {
+            background: linear-gradient(to right, #00d4ff, #ff00ff);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .apply-btn:disabled {
+            background: #555;
+        }
+
+        .status {
+            margin-top: 20px;
+            color: #00d4ff;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="info">
+                <p><strong>MAKE BY:</strong> NTH</p>
+                <p><strong>PANEL</strong> FAKE PC</p>
+                <p><strong>STATUS</strong> ON</p>
+                <p><strong>DEVICE SP:</strong> IOS</p>
+                <p><strong>FREEFIRE:</strong> TH/MAX</p>
+                <p><strong>OB</strong> 46</p>
+
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="menu-item">
+                <span>𝐀𝐈𝐌𝐁𝐎𝐓</span>
+                <button class="apply-btn" onclick="apply('𝐀𝐈𝐌𝐁𝐎𝐓')">Apply</button>
+            </div>
+            <div class="menu-item">
+                <span>𝐀𝐈𝐌𝐋𝐎𝐂𝐊</span>
+                <button class="apply-btn" onclick="apply('𝐀𝐈𝐌𝐋𝐎𝐂𝐊')">Apply</button>
+            </div>
+            <div class="menu-item">
+                <span>𝐍𝐎𝐑𝐄𝐂𝐎𝐈𝐋 𝟑𝟗%</span>
+                <button class="apply-btn" onclick="apply('𝐍𝐎𝐑𝐄𝐂𝐎𝐈𝐋 𝟑𝟎%')">Apply</button>
+            </div>
+            <div class="menu-item">
+                <span>𝐑𝐄𝐆𝐄𝐃𝐈𝐓 𝐅𝐀𝐊𝐄𝐏𝐂</span>
+                <button class="apply-btn" onclick="apply('𝐑𝐄𝐆𝐄𝐃𝐈𝐓𝐅𝐀𝐊𝐄𝐏𝐂')">Apply</button>
+            </div>
+            <div class="menu-item">
+                <span>𝐀𝐍𝐓𝐈𝐁𝐀𝐍𝐃 𝐁𝐘𝐏𝐀𝐒𝐒</span>
+                <button class="apply-btn" onclick="apply('𝐀𝐍𝐓𝐈𝐁𝐀𝐍𝐃 𝐁𝐘𝐏𝐀𝐒𝐒')">Apply</button>
+            </div>
+            <div class="menu-item">
+                <span>𝐒𝐄𝐍𝐒𝐈𝐕𝐈𝐓𝐘 𝐏𝐑𝐎</span>
+                <button class="apply-btn" onclick="apply('𝐒𝐄𝐍𝐒𝐈𝐕𝐈𝐓𝐘𝐏𝐑𝐎')">Apply</button>
+
+            </div>
+
+            <div class="𝐒𝐓𝐀𝐓𝐔𝐒">
+                <p>Status: <span id="status-text">𝐎𝐍𝐋𝐈𝐍𝐄</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function apply(feature) {
+            document.getElementById('status-text').innerText = feature + ' actived successfully!';
+        }
+    </script>
+</body>
+</html>
